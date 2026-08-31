@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!------------------------------------------- Survey Form ---------------------------------- -->
+    <h1 id="title">Student Feedback Survey</h1>
+
+    <p id="description">
+        Please take a few minutes to share your feedback about your learning experience.
+    </p>
+
+    <form id="survey-form">
+
+        <!-- Name -->
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <!-- Email -->
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <!-- Number -->
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="10" max="100" placeholder="Enter your age">
+
+        <!-- Dropdown -->
+        <label for="dropdown">What is your current level?</label>
+        <select id="dropdown">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p>How satisfied are you with your learning experience?</p>
+
+        <label>
+            <input type="radio" name="satisfaction" value="satisfied">
+            Satisfied
+        </label>
+
+        <label>
+            <input type="radio" name="satisfaction" value="neutral">
+            Neutral
+        </label>
+
+        <label>
+            <input type="radio" name="satisfaction" value="unsatisfied">
+            Unsatisfied
+        </label>
+
+        <!-- Checkboxes -->
+        <p>Which technologies are you interested in?</p>
+
+        <label>
+            <input type="checkbox" value="html">
+            HTML
+        </label>
+
+        <label>
+            <input type="checkbox" value="css">
+            CSS
+        </label>
+
+        <label>
+            <input type="checkbox" value="javascript">
+            JavaScript
+        </label>
+
+        <label>
+            <input type="checkbox" value="react">
+            React
+        </label>
+
+        <!-- Comments -->
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+
+        <!-- Submit -->
+        <button id="submit" type="submit">
+            Submit
+        </button>
+
+    </form>
+
+</body>
+
+</html>
